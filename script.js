@@ -16,17 +16,17 @@ for(let i = 0; i < boxes.length; i++) {
     boxes[i].addEventListener("click", function(event) {
         if(event.target.innerHTML === "" && turn === 1) {
             event.target.innerHTML = "<span>X</span>";
-            document.querySelector(".player1").style.transform = "scale(1.06)"
-            document.querySelector(".player1").style.color = "red"
-            document.querySelector(".player2").style.transform = "scale(1)"
-            document.querySelector(".player2").style.color = "white"
-            turn--;
-        } else if(event.target.innerHTML === "" && turn === 0) {
-            event.target.innerHTML = "<span>O</span>";
             document.querySelector(".player2").style.transform = "scale(1.06)"
             document.querySelector(".player2").style.color = "blue"
             document.querySelector(".player1").style.transform = "scale(1)"
             document.querySelector(".player1").style.color = "white"
+            turn--;
+        } else if(event.target.innerHTML === "" && turn === 0) {
+            event.target.innerHTML = "<span>O</span>";
+            document.querySelector(".player1").style.transform = "scale(1.06)"
+            document.querySelector(".player1").style.color = "red"
+            document.querySelector(".player2").style.transform = "scale(1)"
+            document.querySelector(".player2").style.color = "white"
             turn++;
         }  
 
