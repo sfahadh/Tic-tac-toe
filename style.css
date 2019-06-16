@@ -59,6 +59,7 @@ span {
     cursor: pointer;
     font-size: 16px;
     font-family: 'Rye', cursive;
+    z-index: 20;
 }
 
 #reset:hover {
@@ -69,7 +70,6 @@ h1, .player1, .player2 {
     position: absolute;
     top: 0;
 }
-
 
 h1 {
     color: rgb(177, 14, 226);

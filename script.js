@@ -8,7 +8,7 @@ window.onload = function() {
             alert("Sub-Zero goes first");
         }
     }, 100);
- };
+};
 
 const boxes = document.querySelectorAll(".box");
 
