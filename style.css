@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
-    background-image: url(mortal-kombat.jpeg);
+    background-image: url(./Media/mortal-kombat.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border: 1px solid black;
@@ -46,7 +46,7 @@ body {
 
 span {
     color: rgb(177, 14, 226);
-    font-size: 10vw;
+    font-size: 9vw;
     text-shadow: 4px 3px black;
     font-family: 'Rye', cursive;
 }
