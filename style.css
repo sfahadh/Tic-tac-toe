@@ -100,7 +100,7 @@ h1 {
   left: 0;
   margin-left: 20px;
   font-size: 3.2vw;
-  text-shadow: 4px 4px black;
+  text-shadow: 4px 4px rgb(56, 92, 250);
   color: white;
 }
 
@@ -108,7 +108,7 @@ h1 {
   right: 0;
   margin-right: 20px;
   font-size: 3.2vw;
-  text-shadow: 4px 4px rgb(56, 92, 250);
+  text-shadow: 4px 4px black;
   color: white;
 }
 
