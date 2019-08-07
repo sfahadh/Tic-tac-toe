@@ -35,7 +35,7 @@ for(let i = 0; i < boxes.length; i++) {
                 document.getElementById(`modal1`).style.display = "block"; 
             }
             const music = () => {
-                const audio = new Audio("ScorpionWins.mp3");
+                const audio = new Audio("./Media/ScorpionWins.mp3");
                 audio.play();
               }
             setTimeout(music, 100);
@@ -49,7 +49,7 @@ for(let i = 0; i < boxes.length; i++) {
                 document.getElementById(`modal2`).style.display = "block"; 
             }
             const music = () => {
-                const audio = new Audio("SubZeroWins.mp3");
+                const audio = new Audio("./Media/SubZeroWins.mp3");
                 audio.play();
               }
             setTimeout(music, 100);
