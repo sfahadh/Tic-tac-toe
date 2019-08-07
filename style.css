@@ -152,12 +152,22 @@ video {
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-device-width: 1250px) {
   body {
     background-image: url(./Media/mortal-kombat-lg.jpg);
   }
 
   .tic-tac-toe {
     margin-top: 12%;
+  }
+}
+
+@media only screen and (max-device-width: 900px) {
+  body {
+    background-image: url(./Media/mortal-kombat-md.png);
+  }
+
+  .tic-tac-toe {
+    margin-top: 40%;
   }
 }
