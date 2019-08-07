@@ -12,7 +12,7 @@ body {
   grid-template-rows: 180px 180px 180px;
   grid-template-columns: 180px 180px 180px;
   justify-content: center;
-  margin-top: 8%;
+  margin-top: 9%;
 }
 
 .box {
@@ -100,7 +100,7 @@ h1 {
   left: 0;
   margin-left: 20px;
   font-size: 3.2vw;
-  text-shadow: 4px 4px rgb(241, 59, 59);
+  text-shadow: 4px 4px black;
   color: white;
 }
 
@@ -125,14 +125,14 @@ h1 {
 
 video {
   width: 80vw;
-  height: 780px;
+  height: 80vw;
   display: block;
   margin: -20px auto;
 }
 
 #tie {
   position: absolute;
-  font-size: 80px;
+  font-size: 7vw;
   left: 0;
   right: 0;
   top: 160px;
@@ -155,5 +155,9 @@ video {
 @media only screen and (max-width: 1200px) {
   body {
     background-image: url(./Media/mortal-kombat-lg.jpg);
+  }
+
+  .tic-tac-toe {
+    margin-top: 12%;
   }
 }
