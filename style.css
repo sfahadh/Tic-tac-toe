@@ -1,13 +1,16 @@
 body {
+    margin: 0;
+    height: 100vh;
     background-image: url(mortal-kombat.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    border: 1px solid black;
 }
 
 .tic-tac-toe {
     display: grid;
-    grid-template-rows: 16vw 16vw 16vw;
-    grid-template-columns: 16vw 16vw 16vw;
+    grid-template-rows: 180px 180px 180px;
+    grid-template-columns: 180px 180px 180px;
     justify-content: center;
     margin-top: 8%;
 }
@@ -137,5 +140,3 @@ video {
         transform: translateX(92%);
     }
 }
-
-
