@@ -9,8 +9,8 @@ body {
 
 .tic-tac-toe {
   display: grid;
-  grid-template-rows: 180px 180px 180px;
-  grid-template-columns: 180px 180px 180px;
+  grid-template-rows: repeat(3, 180px);
+  grid-template-columns: repeat(3, 180px);
   justify-content: center;
   margin-top: 3%;
 }
@@ -126,10 +126,10 @@ video {
 
 #tie {
   position: absolute;
-  font-size: 7vw;
+  font-size: 6vw;
   left: 0;
   right: 0;
-  top: 160px;
+  top: 40%;
   text-align: center;
   color: white;
   display: none;
@@ -188,11 +188,6 @@ video {
     font-size: 2em;
   }
 
-  #tie {
-    font-size: 4em;
-    top: 160px;
-  }
-
   .title {
     left: 22%;
     font-size: 5vw;
@@ -213,21 +208,29 @@ video {
   }
 
   .tic-tac-toe {
-    margin-top: 2%;
+    display: grid;
+    grid-template-rows: repeat(3, 31vw);
+    grid-template-columns: repeat(3, 31vw);
+    margin-top: 3%;
+  }
+
+  span {
+    font-size: 21vw;
   }
 
   h1 {
     font-size: 2em;
   }
 
-  #tie {
-    font-size: 4em;
-    top: 160px;
+  #headers {
+    margin-top: 15%;
   }
 
   .title {
-    left: 22%;
-    font-size: 5vw;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    font-size: 7.5vw;
   }
 
   .player1 {
@@ -236,5 +239,15 @@ video {
 
   .player2 {
     font-size: 5vw;
+  }
+
+  #tie {
+    font-size: 9vw;
+  }
+
+  #reset {
+    width: 70vw;
+    height: 35px;
+    font-size: 16px;
   }
 }
