@@ -3,9 +3,9 @@ let turn = Math.round(Math.random());
 window.onload = function() {
   setTimeout(function() {
     if (turn === 1) {
-      alert("Scorpion goes first");
-    } else {
       alert("Sub-Zero goes first");
+    } else {
+      alert("Scorpion goes first");
     }
   }, 100);
 };
@@ -16,17 +16,17 @@ for (let i = 0; i < boxes.length; i++) {
   boxes[i].addEventListener("click", function(event) {
     if (event.target.innerHTML === "" && turn === 0) {
       event.target.innerHTML = "<span>X</span>";
-      document.querySelector(".player2").style.transform = "scale(1.06)";
-      document.querySelector(".player2").style.color = "red";
-      document.querySelector(".player1").style.transform = "scale(1)";
-      document.querySelector(".player1").style.color = "white";
-      turn++;
-    } else if (event.target.innerHTML === "" && turn === 1) {
-      event.target.innerHTML = "<span>O</span>";
       document.querySelector(".player1").style.transform = "scale(1.06)";
       document.querySelector(".player1").style.color = "blue";
       document.querySelector(".player2").style.transform = "scale(1)";
       document.querySelector(".player2").style.color = "white";
+      turn++;
+    } else if (event.target.innerHTML === "" && turn === 1) {
+      event.target.innerHTML = "<span>O</span>";
+      document.querySelector(".player2").style.transform = "scale(1.06)";
+      document.querySelector(".player2").style.color = "red";
+      document.querySelector(".player1").style.transform = "scale(1)";
+      document.querySelector(".player1").style.color = "white";
       turn--;
     }
 
@@ -69,7 +69,7 @@ for (let i = 0; i < boxes.length; i++) {
       const r3c3 = boxes[8].innerHTML;
 
       if (r1c1 !== "" && r1c1 === r1c2 && r1c1 === r1c3) {
-        if (player == 0) {
+        if (player == 1) {
           document.querySelector(".player1").innerHTML = "WINNER";
           scorpionWins();
         } else {
@@ -77,7 +77,7 @@ for (let i = 0; i < boxes.length; i++) {
           subZeroWins();
         }
       } else if (r2c1 !== "" && r2c1 === r2c2 && r2c1 === r2c3) {
-        if (player == 0) {
+        if (player == 1) {
           document.querySelector(".player1").innerHTML = "WINNER";
           scorpionWins();
         } else {
@@ -85,7 +85,7 @@ for (let i = 0; i < boxes.length; i++) {
           subZeroWins();
         }
       } else if (r3c1 !== "" && r3c1 === r3c2 && r3c1 === r3c3) {
-        if (player == 0) {
+        if (player == 1) {
           document.querySelector(".player1").innerHTML = "WINNER";
           scorpionWins();
         } else {
@@ -93,7 +93,7 @@ for (let i = 0; i < boxes.length; i++) {
           subZeroWins();
         }
       } else if (r1c1 !== "" && r1c1 === r2c1 && r1c1 === r3c1) {
-        if (player == 0) {
+        if (player == 1) {
           document.querySelector(".player1").innerHTML = "WINNER";
           scorpionWins();
         } else {
@@ -101,7 +101,7 @@ for (let i = 0; i < boxes.length; i++) {
           subZeroWins();
         }
       } else if (r1c2 !== "" && r1c2 === r2c2 && r1c2 === r3c2) {
-        if (player == 0) {
+        if (player == 1) {
           document.querySelector(".player1").innerHTML = "WINNER";
           scorpionWins();
         } else {
@@ -109,7 +109,7 @@ for (let i = 0; i < boxes.length; i++) {
           subZeroWins();
         }
       } else if (r1c3 !== "" && r1c3 === r2c3 && r1c1 === r3c3) {
-        if (player == 0) {
+        if (player == 1) {
           document.querySelector(".player1").innerHTML = "WINNER";
           scorpionWins();
         } else {
@@ -117,7 +117,7 @@ for (let i = 0; i < boxes.length; i++) {
           subZeroWins();
         }
       } else if (r1c1 !== "" && r1c1 === r2c2 && r1c1 === r3c3) {
-        if (player == 0) {
+        if (player == 1) {
           document.querySelector(".player1").innerHTML = "WINNER";
           scorpionWins();
         } else {
@@ -125,7 +125,7 @@ for (let i = 0; i < boxes.length; i++) {
           subZeroWins();
         }
       } else if (r1c3 !== "" && r1c3 === r2c2 && r1c3 === r3c1) {
-        if (player == 0) {
+        if (player == 1) {
           document.querySelector(".player1").innerHTML = "WINNER";
           scorpionWins();
         } else {
